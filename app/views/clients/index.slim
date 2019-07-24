@@ -1,0 +1,6 @@
+.row
+  - @clients.each do |client|
+    .col-3= client.first_name 
+    .col-3= client.last_name
+    .col-6= client.address
+

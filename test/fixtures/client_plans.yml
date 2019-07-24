@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  client: one
+  plan: one
+  discounts: 9.99
+  surcharges: 9.99
+  started_at: 2019-07-23 22:39:07
+  ended_at: 2019-07-23 22:39:07
+  base_price: 9.99
+  total: 9.99
+
+two:
+  client: two
+  plan: two
+  discounts: 9.99
+  surcharges: 9.99
+  started_at: 2019-07-23 22:39:07
+  ended_at: 2019-07-23 22:39:07
+  base_price: 9.99
+  total: 9.99

@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    = csrf_meta_tags
+    = csp_meta_tag
+
+    = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true
+
+  body.application-body
+
+    main.application-main
+      .container
+        = yield
+    
+    footer.application-footer
+     
+        
+    .toastr-container
+      - flash.each do |type, message|
+        .toastr role='alert' aria-live='assertive' aria-atomic='true' 
+          .toastr-header
+            strong.mr-auto= type
+            button.ml-2.mb-1.close type='button' data-dismiss='toast' aria-label='close'
+              span aria-hidden=true &times;
+          .toastr-body
+            p= message
+    /= render partial: 'layouts/footer'
+
+
+  
+
+      
